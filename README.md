@@ -1,7 +1,6 @@
-Desafio Globo.com
-=========
+Feed de Mensagens
 
-Autor 
+Autor
 
     Esse app foi desenvolvido por Leonardo Andrade <leonardopandrade@gmail.com>
 
@@ -38,3 +37,4 @@ Alguns pontos de melhora:
         -> Os arquivos estáticos servidos pelo servidor (css e js), não foram tratados (min, obsfucação, concat e etc).
         -> O Log apenas é gerado no console.
         -> Validação que o avatar do usuário é realmente uma imagem.
+

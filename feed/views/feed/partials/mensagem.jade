@@ -1,0 +1,11 @@
+div(class='comment')
+    a(class='avatar')
+        img(src=mensagem.avatar ? mensagem.avatar : 'images/default_user.jpg')
+    div(class='content')
+        a(class='author') #{mensagem.autor}
+        div(class='metadata')
+            span(class='date timeago', data-enviado-em=mensagem.enviadoEm)
+        div(class='text') !{mensagem.corpo}
+        if mensagem.imagem
+            img(class='image', src=mensagem.imagem)
+div(class='ui section divider')

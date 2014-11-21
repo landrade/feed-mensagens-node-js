@@ -1,0 +1,27 @@
+body {
+    font: 14px"Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #c0c0c0;
+}
+a {
+    color: #00B7FF;
+}
+.more-message-button {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+    height: 35px;
+}
+.feed-container {
+    max-width: 600px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.login-container {
+    max-width: 600px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.comment .content .image {
+    width: 100%;
+}

@@ -1,0 +1,28 @@
+extends ../layout.jade
+
+block head
+    title Globo Feed - Entrar
+
+block content
+    div(class='ui segment login-container')
+        div(class="one column grid ")
+            div(class='column')
+                
+                form(class='ui form', action='/entrar', method='post')
+                    input(type='hidden', name='_csrf', value=_csrf)
+                    div(class=usuarioError ? 'field error' : 'field')
+                        
+                        label Usuário
+                        div(class='ui left labeled icon input')
+                            input(type='text' name='nome' placeholder='Nome')
+                            i(class='user icon')
+                            div(class='ui corner label')
+                                i(class='icon asterisk')
+                            
+                    div(class='field')
+                        label Avatar
+                        div(class='ui left labeled icon input')
+                            input(type='text' name='avatar' placeholder='URL')
+                            i(class='photo icon')
+                    
+                    button(class='ui blue submit button' type='submit') Entrar

@@ -1,0 +1,7 @@
+each mensagem in mensagens
+    include mensagem.jade
+
+if temMaisPaginas
+    div(class='more-message-button', data-ultimo-id=ultimoId) 
+        span(class='text') carregar mais
+        div(class='ui active inline loader', style='display:none;')

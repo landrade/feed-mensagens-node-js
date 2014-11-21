@@ -1,0 +1,27 @@
+extends ../layout.jade
+
+block head
+    title Globo Feed - Mensagens
+    script(src='/javascripts/jquery.min.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='/javascripts/timeago.js')
+    script(src='/javascripts/feed.js') 
+
+block content
+    div(class='ui segment feed-container')
+        div(class='ui one column grid')
+            
+            div(class='column')
+                div(class='ui comments')
+                    div(class='comment')
+                        a(class='avatar')
+                            img(src=usuario.avatar ? usuario.avatar : 'images/default_user.jpg')
+                        div(class='content')
+                            div(class='ui fluid action input')
+                                input#new-message-text(type='text' placeholder='Envie sua mensagem!')
+                                div#new-message-send-button(class='ui green right labeled button') Enviar
+
+                div(class='ui section divider')
+
+                div#messages(class='ui comments')
+

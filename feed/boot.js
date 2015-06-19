@@ -52,7 +52,7 @@ module.exports = function(app) {
             console.log('Sincronizando Banco de dados');
             app.models.schema.sequelize.sync().then(function() {
                 console.log('Verificando dados previamentes inputados do JSON');
-                Mensagem.count().success(function(c) {
+                Mensagem.count().then(function(c) {
                     if (c === 0) {
                         console.log('Carregando dados do JSON');
                         carregarDadosIniciais(callback);

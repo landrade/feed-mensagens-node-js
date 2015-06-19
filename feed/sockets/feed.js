@@ -23,9 +23,9 @@ module.exports = function(io, app) {
                 corpo: data.msg,
                 autor: usuario.nome,
                 avatar: usuario.avatar
-            }).success(function(result) {
+            }).then(function(result) {
                 callback(null, result);
-            }).error(function(error) {
+            },function(error) {
                 callback(error);
             });
         };
